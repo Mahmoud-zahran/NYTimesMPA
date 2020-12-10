@@ -1,4 +1,4 @@
-package com.example.UnionCoop.ui.fragments;
+package com.example.NYTimesMPA.ui.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,12 +15,15 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.UnionCoop.adapters.RepoDataAdapter;
+import com.example.NYTimesMPA.R;
+import com.example.NYTimesMPA.adapters.RepoDataAdapter;
 
-import com.example.UnionCoop.databinding.FavoritesBinding;
+import com.example.NYTimesMPA.databinding.FavoritesBinding;
 
-import com.example.UnionCoop.model.RepositoryResponse;
-import com.example.UnionCoop.viewmodel.RepoDataViewModel;
+import com.example.NYTimesMPA.model.RepositoryResponse;
+import com.example.NYTimesMPA.ui.AdapterCommunictionWithActivity;
+import com.example.NYTimesMPA.ui.MainActivity;
+import com.example.NYTimesMPA.viewmodel.RepoDataViewModel;
 
 
 import java.util.ArrayList;
@@ -33,12 +36,11 @@ import dagger.hilt.android.AndroidEntryPoint;
  */
 
 @AndroidEntryPoint
-public class Favorites extends Fragment {
+public class Favorites extends Fragment /*implements AdapterCommunictionWithActivity */{
     private FavoritesBinding binding;
     private RepoDataViewModel viewModel;
     private RepoDataAdapter adapter;
-    private ArrayList<RepositoryResponse> repoDataList;
-
+    private ArrayList<RepositoryResponse.Result> repoDataList;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -66,8 +68,8 @@ public class Favorites extends Fragment {
                 if(repoData == null || repoData.size() == 0)
                     binding.noFavoritesText.setVisibility(View.VISIBLE);
                 else{
-                    ArrayList<RepositoryResponse> list = new ArrayList<>();
-                    list.addAll(repoData);
+                    ArrayList<RepositoryResponse.Result> list = new ArrayList<>();
+                    list.addAll(repoData.get(0).getResults());
                     adapter.updateList(list);
                 }
             }
@@ -84,8 +86,8 @@ public class Favorites extends Fragment {
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                 int swipedRepoPosition = viewHolder.getAdapterPosition();
-                RepositoryResponse repoData = adapter.getRepoAt(swipedRepoPosition);
-                viewModel.deleteRepo(repoData.getName());
+                RepositoryResponse.Result repoData = adapter.getRepoAt(swipedRepoPosition);
+//                viewModel.deleteRepo(repoData.getStatus());
                 Toast.makeText(getContext(),"Repo removed from favorites.",Toast.LENGTH_SHORT).show();
             }
         };
@@ -97,8 +99,12 @@ public class Favorites extends Fragment {
 
     private void initRecyclerView() {
         binding.favoritesRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new RepoDataAdapter(getContext(), repoDataList);
+        adapter = new RepoDataAdapter(/*this,*/ getActivity().getApplicationContext(), repoDataList);
         binding.favoritesRecyclerView.setAdapter(adapter);
     }
-
+   /* @Override
+    public void openHomeFragment() {
+        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Home())
+                .commit();
+    }*/
 }
