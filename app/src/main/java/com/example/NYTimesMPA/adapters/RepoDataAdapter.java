@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -60,6 +61,7 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
             @Override
             public void onClick(View view) {
                 Log.d("RepoAdapter", "onClick: ");
+                Toast.makeText(mContext, "item clicked #"+position, Toast.LENGTH_SHORT).show();
                 fragmentJump(item,position);
 //                mAdapterCommunictionWithActivity.openHomeFragment();
 //                mList.get(position).setExpanded(!mList.get(position).isExpanded());
@@ -69,7 +71,7 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
 //                        .commit();
 //                AppCompatActivity activity = (AppCompatActivity) new MainActivity();
 //                Fragment myFragment = new Favorites();
-//                activity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout    , myFragment).addToBackStack(null).commit();
+//                activity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout  , myFragment).addToBackStack(null).commit();
 
             }
         });
