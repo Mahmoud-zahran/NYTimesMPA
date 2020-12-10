@@ -1,4 +1,4 @@
-package com.example.UnionCoop.ui.fragments;
+package com.example.NYTimesMPA.ui.fragments;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -19,13 +19,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.UnionCoop.R;
-import com.example.UnionCoop.adapters.RepoDataAdapter;
+import com.example.NYTimesMPA.R;
+import com.example.NYTimesMPA.adapters.RepoDataAdapter;
 
 
-import com.example.UnionCoop.databinding.HomeBinding;
-import com.example.UnionCoop.model.RepositoryResponse;
-import com.example.UnionCoop.viewmodel.RepoDataViewModel;
+import com.example.NYTimesMPA.databinding.HomeBinding;
+import com.example.NYTimesMPA.model.RepositoryResponse;
+import com.example.NYTimesMPA.ui.AdapterCommunictionWithActivity;
+import com.example.NYTimesMPA.ui.MainActivity;
+import com.example.NYTimesMPA.viewmodel.RepoDataViewModel;
 
 
 import java.util.ArrayList;
@@ -33,16 +35,16 @@ import java.util.ArrayList;
 import dagger.hilt.android.AndroidEntryPoint;
 
 /**
- * Created by Mahmoud Zahran on 2,Oct,2020
+ * Created by Mahmoud Zahran on 10, Dec,2020
  */
 
 @AndroidEntryPoint
-public class Home extends Fragment {
+public class Home extends Fragment /*implements AdapterCommunictionWithActivity*/ {
     private static final String TAG = "Home";
     private HomeBinding binding;
     private RepoDataViewModel viewModel;
     private RepoDataAdapter adapter;
-    private ArrayList<RepositoryResponse> repoDataList;
+    private ArrayList<RepositoryResponse.Result> repoDataList;
 
     @Nullable
     @Override
@@ -91,10 +93,10 @@ public class Home extends Fragment {
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                 int swipedRepoPosition = viewHolder.getAdapterPosition();
-                RepositoryResponse repositoryResponse = adapter.getRepoAt(swipedRepoPosition);
-                viewModel.insertRepo(repositoryResponse);
+                RepositoryResponse.Result repositoryResponse = adapter.getRepoAt(swipedRepoPosition);
+//                viewModel.insertRepo(repositoryResponse);
                 adapter.notifyDataSetChanged();
-                Toast.makeText(getContext(),"Repo added to favorites.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"Repo added to fragment_details.",Toast.LENGTH_SHORT).show();
             }
         };
 
@@ -104,23 +106,36 @@ public class Home extends Fragment {
 
 
     private void observeData() {
-        viewModel.getmRepoList().observe(getViewLifecycleOwner(), (Observer<? super ArrayList<RepositoryResponse>>) new Observer<ArrayList<RepositoryResponse>>() {
+        viewModel.getmRepoList().observe(getViewLifecycleOwner(), (Observer<? super ArrayList<RepositoryResponse.Result>>) new Observer<ArrayList<RepositoryResponse.Result>>() {
             @Override
-            public void onChanged(ArrayList<RepositoryResponse> repositoryResponses) {
-                ArrayList<RepositoryResponse> repoData= repositoryResponses;
+            public void onChanged(ArrayList<RepositoryResponse.Result> results) {
+                ArrayList<RepositoryResponse.Result> repoData= results;
                 if (repoData.isEmpty()){
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new ConnectionLost())
                             .commit();
                 }
                 Log.e(TAG, "onChanged: " + repoData.size() );
-                adapter.updateList(repoData);
+                adapter.updateList((ArrayList<RepositoryResponse.Result>) repoData);
             }
         });
-    }
+            }
+
+//            @Override
+//         public void onChanged(RepositoryResponse repositoryResponse) {
+//                ArrayList<RepositoryResponse.Result> repoData= repositoryResponse.getResults();
+//                if (repoData.isEmpty()){
+//                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new ConnectionLost())
+//                            .commit();
+//                }
+//                Log.e(TAG, "onChanged: " + repoData.size() );
+//                adapter.updateList((ArrayList<RepositoryResponse.Result>) repoData);
+//            }
+//        });
+//    }
 
     private void initRecyclerView() {
         binding.repoRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new RepoDataAdapter(getContext(), repoDataList);
+        adapter = new RepoDataAdapter(/*this,*/ getActivity().getApplicationContext(), (ArrayList<RepositoryResponse.Result>) repoDataList);
         binding.repoRecyclerView.setAdapter(adapter);
     }
     private boolean isNetworkConnected() {
@@ -128,4 +143,9 @@ public class Home extends Fragment {
 
         return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
     }
+   /* @Override
+    public void openHomeFragment() {
+        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Favorites())
+                .commit();
+    }*/
 }

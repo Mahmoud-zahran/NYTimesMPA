@@ -10,11 +10,14 @@
     android:background="@color/colorPrimary">
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trending"
-        android:textColor="@color/colorAccent"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:text="NY Times Most Popular"
+        android:textColor="@color/white"
+        android:textSize="26sp"
         android:layout_gravity="center"
         android:id="@+id/toolbar_title" />
+<!--
+    android:textStyle="bold"
+-->
+
 </androidx.appcompat.widget.Toolbar>

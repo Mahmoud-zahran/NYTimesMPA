@@ -1,10 +1,10 @@
-package com.example.UnionCoop.db;
+package com.example.NYTimesMPA.db;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
 
-import com.example.UnionCoop.model.RepositoryResponse;
+import com.example.NYTimesMPA.model.RepositoryResponse;
 
 /**
  * Created by Mahmoud Zahran on 2,Oct,2020

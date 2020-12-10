@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.NYTimesMPA.R;
 import com.example.NYTimesMPA.adapters.RepoDataAdapter;
 
-import com.example.NYTimesMPA.databinding.FavoritesBinding;
+import com.example.NYTimesMPA.databinding.FragmentDetailsBinding;
 
 import com.example.NYTimesMPA.model.RepositoryResponse;
 import com.example.NYTimesMPA.ui.AdapterCommunictionWithActivity;
@@ -32,19 +32,19 @@ import java.util.List;
 import dagger.hilt.android.AndroidEntryPoint;
 
 /**
- * Created by Mahmoud Zahran on 3,Oct,2020
+ * Created by Mahmoud Zahran on 10, Dec,2020
  */
 
 @AndroidEntryPoint
-public class Favorites extends Fragment /*implements AdapterCommunictionWithActivity */{
-    private FavoritesBinding binding;
+public class DetailsFragment extends Fragment /*implements AdapterCommunictionWithActivity */{
+    private FragmentDetailsBinding binding;
     private RepoDataViewModel viewModel;
     private RepoDataAdapter adapter;
     private ArrayList<RepositoryResponse.Result> repoDataList;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FavoritesBinding.inflate(inflater,container,false);
+        binding = FragmentDetailsBinding.inflate(inflater,container,false);
         return binding.getRoot();
     }
 
@@ -88,7 +88,7 @@ public class Favorites extends Fragment /*implements AdapterCommunictionWithActi
                 int swipedRepoPosition = viewHolder.getAdapterPosition();
                 RepositoryResponse.Result repoData = adapter.getRepoAt(swipedRepoPosition);
 //                viewModel.deleteRepo(repoData.getStatus());
-                Toast.makeText(getContext(),"Repo removed from favorites.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"Repo removed from fragment_details.",Toast.LENGTH_SHORT).show();
             }
         };
 

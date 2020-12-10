@@ -1,4 +1,4 @@
-package com.example.UnionCoop;
+package com.example.NYTimesMPA;
 
 import org.junit.Test;
 

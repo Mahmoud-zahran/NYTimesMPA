@@ -1,4 +1,4 @@
-package com.example.UnionCoop.ui.fragments;
+package com.example.NYTimesMPA.ui.fragments;
 
 import android.os.Bundle;
 
@@ -10,13 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.UnionCoop.R;
-import com.example.UnionCoop.databinding.FragmentConnectionLostBinding;
-import com.example.UnionCoop.databinding.HomeBinding;
+import com.example.NYTimesMPA.databinding.FragmentConnectionLostBinding;
+import com.example.NYTimesMPA.databinding.HomeBinding;
 
 import dagger.hilt.android.AndroidEntryPoint;
 /**
- * Created by Mahmoud Zahran on 2,Oct,2020
+ * Created by Mahmoud Zahran on 10, Dec,2020
  */
 @AndroidEntryPoint
 public class ConnectionLost extends Fragment {

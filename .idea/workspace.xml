@@ -6,13 +6,69 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="get" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="726a7abc-3d42-4ad5-a7bd-1719cc15e48b" name="Default Changelist" comment="initial commit with all app feature needs.">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/MainActivity.java" afterDir="false" />
+    <list default="true" id="726a7abc-3d42-4ad5-a7bd-1719cc15e48b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/NYTimesMPA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/AdapterCommunictionWithActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/icons8_calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/icons_chevron_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/icons_chevron_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icons8_calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icons_chevron_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/UnionCoop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/UnionCoop/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/NYTimesMPA/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/BaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/BaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/adapters/RepoDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/db/RepoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/db/RepoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/db/RepoDataDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/db/RepoDataDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/di/DataBaseModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/di/DataBaseModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/di/NetworkModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/di/NetworkModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/model/RepoData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/model/RepositoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/model/RepositoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/network/RepoApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/network/RepoApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/fragments/ConnectionLost.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/ConnectionLost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/fragments/Favorites.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/DetailsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/fragments/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/viewmodel/RepoDataViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/viewmodel/RepoDataViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/favorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_connection_lost.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_connection_lost.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/UnionCoop/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/NYTimesMPA/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +97,7 @@
       <list>
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -55,13 +112,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_27" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-10-02T20:09:44.195Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.recentlyUsedThemes" value="Base.Theme.MaterialComponents.Light" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -69,8 +127,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-mdpi" />
     </key>
   </component>
   <component name="RunManager">
@@ -144,6 +204,14 @@
       <option name="presentableId" value="Default" />
       <updated>1601488144243</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit with all app feature needs.">
+      <created>1601775209592</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601775209592</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,34 +219,39 @@
     <option name="LAST_COMMIT_MESSAGE" value="initial commit with all app feature needs." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="265" y="187" key="#PSD" timestamp="1601498550939">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="265" y="187" key="#PSD" timestamp="1607563597717">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="265" y="187" key="#PSD/0.23.1440.813@0.23.1440.813" timestamp="1601498550939" />
+    <state x="265" y="187" key="#PSD/0.23.1440.814@0.23.1440.814" timestamp="1607563597717" />
     <state x="583" y="88" key="#app" timestamp="1601674942740">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="583" y="88" key="#app/0.23.1440.813@0.23.1440.813" timestamp="1601674942740" />
-    <state x="205" y="110" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601496952645">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="205" y="110" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.813@0.23.1440.813" timestamp="1601496952645" />
-    <state x="553" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1601693593712">
+    <state x="205" y="96" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603839668664">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="553" y="157" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1601693593712" />
+    <state x="205" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1603839668664" />
+    <state x="205" y="110" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.813@0.23.1440.813" timestamp="1601496952645" />
+    <state x="553" y="165" key="#com.intellij.ide.util.MemberChooser" timestamp="1607611916710">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="553" y="157" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1607544419389" />
     <state x="553" y="165" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1601654900880" />
-    <state x="209" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601502318944">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="553" y="165" key="#com.intellij.ide.util.MemberChooser/0.23.1440.814@0.23.1440.814" timestamp="1607611916710" />
+    <state x="209" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607618449673">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="209" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.813@0.23.1440.813" timestamp="1601502318944" />
+    <state x="209" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.814@0.23.1440.814" timestamp="1607618449673" />
     <state x="478" y="202" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1601509571722">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="478" y="202" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1440.813@0.23.1440.813" timestamp="1601509571722" />
-    <state x="545" y="248" key="#xdebugger.evaluate" timestamp="1601769912489">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="574" y="224" key="#xdebugger.evaluate" timestamp="1607558629272">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="574" y="224" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1607558629272" />
     <state x="545" y="248" key="#xdebugger.evaluate/0.23.1440.813@0.23.1440.813" timestamp="1601769912489" />
     <state x="308" y="212" key="AndroidCreateResourceDirectoryDialog" timestamp="1601745836041">
       <screen x="0" y="0" width="1440" height="900" />
@@ -193,75 +266,100 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="575" y="322" key="AndroidCreateXmlResourceDialog/0.0.1440.900@0.0.1440.900" timestamp="1601738416302" />
+    <state x="576" y="222" key="AndroidProcessChooserDialog" timestamp="1607538972339">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="576" y="222" key="AndroidProcessChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1607538972339" />
     <state x="478" y="160" key="AndroidThemeDialog" timestamp="1601664668445">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="478" y="160" key="AndroidThemeDialog/0.23.1440.813@0.23.1440.813" timestamp="1601664668445" />
-    <state x="174" y="32" key="CommitChangelistDialog2" timestamp="1601773095972">
+    <state x="174" y="32" key="CommitChangelistDialog2" timestamp="1601775209400">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="174" y="32" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1601773095972" />
-    <state width="485" height="466" key="DebuggerActiveHint" timestamp="1601653068970">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="174" y="32" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1601775209400" />
+    <state width="485" height="467" key="DebuggerActiveHint" timestamp="1607617493263">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
+    <state width="485" height="516" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1607552652503" />
     <state width="485" height="466" key="DebuggerActiveHint/0.23.1440.813@0.23.1440.813" timestamp="1601653068970" />
-    <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1601771291945">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="485" height="467" key="DebuggerActiveHint/0.23.1440.814@0.23.1440.814" timestamp="1607617493263" />
+    <state width="1398" height="291" key="GridCell.Tab.0.bottom" timestamp="1607619961324">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state width="1398" height="450" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601765555306" />
-    <state width="1398" height="263" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1601771291945" />
-    <state width="1398" height="263" key="GridCell.Tab.0.center" timestamp="1601771291945">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607562825330" />
+    <state width="1398" height="291" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1607614176598" />
+    <state width="1398" height="291" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1607619961324" />
+    <state width="1398" height="291" key="GridCell.Tab.0.center" timestamp="1607619961323">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state width="1398" height="450" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601765555304" />
-    <state width="1398" height="263" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1601771291945" />
-    <state width="1398" height="263" key="GridCell.Tab.0.left" timestamp="1601771291944">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607562825330" />
+    <state width="1398" height="291" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1607614176597" />
+    <state width="1398" height="291" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1607619961323" />
+    <state width="1398" height="291" key="GridCell.Tab.0.left" timestamp="1607619961322">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state width="1398" height="450" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601765555300" />
-    <state width="1398" height="263" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1601771291944" />
-    <state width="1398" height="263" key="GridCell.Tab.0.right" timestamp="1601771291945">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607562825330" />
+    <state width="1398" height="291" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1607614176597" />
+    <state width="1398" height="291" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1607619961322" />
+    <state width="1398" height="291" key="GridCell.Tab.0.right" timestamp="1607619961323">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state width="1398" height="450" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601765555305" />
-    <state width="1398" height="263" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1601771291945" />
-    <state width="1398" height="263" key="GridCell.Tab.1.bottom" timestamp="1601771291946">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607562825330" />
+    <state width="1398" height="291" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1607614176597" />
+    <state width="1398" height="291" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1607619961323" />
+    <state width="1398" height="262" key="GridCell.Tab.1.bottom" timestamp="1607618124021">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
+    <state width="1398" height="307" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607560630446" />
     <state width="1398" height="263" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1601771291946" />
-    <state width="1398" height="263" key="GridCell.Tab.1.center" timestamp="1601771291946">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="262" key="GridCell.Tab.1.bottom/0.23.1440.814@0.23.1440.814" timestamp="1607618124021" />
+    <state width="1398" height="262" key="GridCell.Tab.1.center" timestamp="1607618124021">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
+    <state width="1398" height="307" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607560630445" />
     <state width="1398" height="263" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1601771291946" />
-    <state width="1398" height="263" key="GridCell.Tab.1.left" timestamp="1601771291945">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="262" key="GridCell.Tab.1.center/0.23.1440.814@0.23.1440.814" timestamp="1607618124021" />
+    <state width="1398" height="262" key="GridCell.Tab.1.left" timestamp="1607618124020">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
+    <state width="1398" height="307" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607560630444" />
     <state width="1398" height="263" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1601771291945" />
-    <state width="1398" height="263" key="GridCell.Tab.1.right" timestamp="1601771291946">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="262" key="GridCell.Tab.1.left/0.23.1440.814@0.23.1440.814" timestamp="1607618124020" />
+    <state width="1398" height="262" key="GridCell.Tab.1.right" timestamp="1607618124021">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
+    <state width="1398" height="307" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607560630445" />
     <state width="1398" height="263" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1601771291946" />
+    <state width="1398" height="262" key="GridCell.Tab.1.right/0.23.1440.814@0.23.1440.814" timestamp="1607618124021" />
     <state x="242" y="87" key="SettingsEditor" timestamp="1601505780816">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="242" y="87" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1601505780816" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1601775247832">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1601775247832" />
     <state width="700" height="387" key="XDebugger.FullValuePopup" timestamp="1601566388986">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="700" height="387" key="XDebugger.FullValuePopup/0.23.1440.813@0.23.1440.813" timestamp="1601566388986" />
-    <state x="497" y="235" key="chooseDestDirectoryDialog" timestamp="1601685757734">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="497" y="236" key="chooseDestDirectoryDialog" timestamp="1607605343529">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state x="497" y="235" key="chooseDestDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1601685757734" />
-    <state x="390" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1601772637545">
+    <state x="497" y="235" key="chooseDestDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1607556352967" />
+    <state x="497" y="236" key="chooseDestDirectoryDialog/0.23.1440.814@0.23.1440.814" timestamp="1607605343529" />
+    <state x="390" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1607614450918">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="390" y="262" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1601679768521" />
-    <state x="390" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1601772637545" />
-    <state x="372" y="186" width="958" height="486" key="find.popup" timestamp="1601773345460">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="390" y="262" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1607538841560" />
+    <state x="390" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1607614450918" />
+    <state x="372" y="186" width="975" height="488" key="find.popup" timestamp="1607619191865">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state x="372" y="186" width="958" height="486" key="find.popup/0.23.1440.813@0.23.1440.813" timestamp="1601773345460" />
+    <state x="372" y="180" width="975" height="539" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607546136665" />
+    <state x="372" y="186" width="965" height="486" key="find.popup/0.23.1440.813@0.23.1440.813" timestamp="1602358523914" />
+    <state x="372" y="186" width="975" height="488" key="find.popup/0.23.1440.814@0.23.1440.814" timestamp="1607619191865" />
     <state width="600" height="470" key="javadoc.popup" timestamp="1601764447364">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -276,62 +374,129 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/repository/Repository.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/repository/Repository.java</url>
           <line>33</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/viewmodel/RepoDataViewModel.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/fragments/Home.java</url>
-          <line>109</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/fragments/Home.java</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/Home.java</url>
+          <line>64</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/viewmodel/RepoDataViewModel.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/viewmodel/RepoDataViewModel.java</url>
-          <line>52</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/fragments/Home.java</url>
-          <line>106</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/Home.java</url>
+          <line>108</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/MainActivity.java</url>
-          <line>41</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/MainActivity.java</url>
+          <line>43</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/MainActivity.java</url>
-          <line>40</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/MainActivity.java</url>
+          <line>42</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/ui/MainActivity.java</url>
-          <line>80</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/MainActivity.java</url>
+          <line>82</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/Home.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/Home.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/Home.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/viewmodel/RepoDataViewModel.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/viewmodel/RepoDataViewModel.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/viewmodel/RepoDataViewModel.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/fragments/Home.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/ui/MainActivity.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/adapters/RepoDataAdapter.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/UnionCoop/network/RepoApiService.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/NYTimesMPA/network/RepoApiService.java</url>
           <line>16</line>
-          <properties class="com.example.UnionCoop.network.RepoApiService" method="getReposData" />
+          <properties class="com.example.NYTimesMPA.network.RepoApiService" method="getReposData" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

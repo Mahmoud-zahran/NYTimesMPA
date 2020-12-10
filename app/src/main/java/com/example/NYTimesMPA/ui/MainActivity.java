@@ -1,32 +1,32 @@
-package com.example.UnionCoop.ui;
+package com.example.NYTimesMPA.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-import com.example.UnionCoop.databinding.ActivityMainBinding;
-import com.example.UnionCoop.ui.fragments.ConnectionLost;
-import com.example.UnionCoop.ui.fragments.Favorites;
-import com.example.UnionCoop.ui.fragments.Home;
-import com.example.UnionCoop.R;
+import com.example.NYTimesMPA.databinding.ActivityMainBinding;
+import com.example.NYTimesMPA.ui.fragments.ConnectionLost;
+import com.example.NYTimesMPA.ui.fragments.DetailsFragment;
+import com.example.NYTimesMPA.ui.fragments.Home;
+import com.example.NYTimesMPA.R;
 
 
 import java.net.InetAddress;
 
 import dagger.hilt.android.AndroidEntryPoint;
 /**
- * Created by Mahmoud Zahran on 2,Oct,2020
+ * Created by Mahmoud Zahran on 10, Dec,2020
  */
 @AndroidEntryPoint
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     private ActivityMainBinding binding;
     private boolean isFavoriteListVisible = false;
 
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.openFav){
             isFavoriteListVisible = false;
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Favorites())
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new DetailsFragment())
                             .commit();
         }
         if (item.getItemId() == R.id.openHome){
@@ -85,5 +85,14 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public void switchContent(int id, Fragment fragment) {
+//        etSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Favorites())
+//                        .commit();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(id, fragment, fragment.toString());
+        ft.addToBackStack(null);
+        ft.commit();
     }
 }

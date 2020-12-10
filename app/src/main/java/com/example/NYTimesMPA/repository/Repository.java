@@ -1,11 +1,11 @@
-package com.example.UnionCoop.repository;
+package com.example.NYTimesMPA.repository;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.UnionCoop.db.RepoDao;
+import com.example.NYTimesMPA.db.RepoDao;
 
-import com.example.UnionCoop.model.RepositoryResponse;
-import com.example.UnionCoop.network.RepoApiService;
+import com.example.NYTimesMPA.model.RepositoryResponse;
+import com.example.NYTimesMPA.network.RepoApiService;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ import javax.inject.Inject;
 import io.reactivex.rxjava3.core.Observable;
 
 /**
- * Created by Mahmoud Zahran on 2,Oct,2020
+ * Created by Mahmoud Zahran on 10, Dec,2020
  */
 
 public class Repository {
@@ -29,9 +29,9 @@ public class Repository {
     }
 
 
-    public Observable<List<RepositoryResponse>> getReposData(String language
-            , String since,String langspoken_language_codeuage){
-        return apiService.getReposData(language,since,langspoken_language_codeuage);
+    public Observable<RepositoryResponse> getReposData(String period
+            , String apiKey){
+        return apiService.getReposData(period,apiKey);
     }
 
     public void insertRepo(RepositoryResponse repositoryResponse){

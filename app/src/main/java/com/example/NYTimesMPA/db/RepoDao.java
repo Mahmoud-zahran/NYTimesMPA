@@ -1,4 +1,4 @@
-package com.example.UnionCoop.db;
+package com.example.NYTimesMPA.db;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,12 +6,12 @@ import androidx.room.Insert;
 import androidx.room.Query;
 
 
-import com.example.UnionCoop.model.RepositoryResponse;
+import com.example.NYTimesMPA.model.RepositoryResponse;
 
 import java.util.List;
 
 /**
- * Created by Mahmoud Zahran on 2,Oct,2020
+ * Created by Mahmoud Zahran on 10, Dec,2020
  */
 
 @Dao
@@ -20,8 +20,8 @@ public interface RepoDao {
     @Insert
     void insertRepoDao(RepositoryResponse repositoryResponse);
 
-    @Query("DELETE FROM favorite_table WHERE name = :author")
-    void deleteRepoDao(String author);
+    @Query("DELETE FROM favorite_table WHERE status = :status")
+    void deleteRepoDao(String status);
 
     @Query("DELETE FROM favorite_table")
     void deleteAll();

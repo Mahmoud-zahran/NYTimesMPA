@@ -1,11 +1,11 @@
-package com.example.UnionCoop.di;
+package com.example.NYTimesMPA.di;
 
 import android.app.Application;
 
 import androidx.room.Room;
 
-import com.example.UnionCoop.db.RepoDao;
-import com.example.UnionCoop.db.RepoDataDB;
+import com.example.NYTimesMPA.db.RepoDao;
+import com.example.NYTimesMPA.db.RepoDataDB;
 
 import javax.inject.Singleton;
 

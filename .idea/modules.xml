@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UnionCoop.iml" filepath="$PROJECT_DIR$/.idea/modules/UnionCoop.iml" group="UnionCoop" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="UnionCoop/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NYTimesMPA.iml" filepath="$PROJECT_DIR$/.idea/modules/NYTimesMPA.iml" group="NYTimesMPA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="NYTimesMPA/app" />
     </modules>
   </component>
 </project>

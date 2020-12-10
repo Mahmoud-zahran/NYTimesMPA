@@ -1,34 +1,42 @@
-package com.example.UnionCoop.adapters;
+package com.example.NYTimesMPA.adapters;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
 
-import com.example.UnionCoop.databinding.ListItemBinding;
-import com.example.UnionCoop.model.RepositoryResponse;
+import com.bumptech.glide.request.RequestOptions;
+import com.example.NYTimesMPA.R;
+import com.example.NYTimesMPA.databinding.ListItemBinding;
+import com.example.NYTimesMPA.model.RepositoryResponse;
+import com.example.NYTimesMPA.ui.MainActivity;
+import com.example.NYTimesMPA.ui.fragments.DetailsFragment;
 
 
 import java.util.ArrayList;
 
 /**
- * Created by Mahmoud Zahran on 2,Oct,2020
+ * Created by Mahmoud Zahran on 10, Dec,2020
  */
 public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDataViewHolder> {
     private Context mContext;
-    private ArrayList<RepositoryResponse> mList;
+    private ArrayList<RepositoryResponse.Result> mList;
+//    AdapterCommunictionWithActivity mAdapterCommunictionWithActivity= null ;
     private ListItemBinding binding;
 
-    public RepoDataAdapter(Context mContext, ArrayList<RepositoryResponse> mList) {
+    public RepoDataAdapter(/*AdapterCommunictionWithActivity adapterCommunictionWithActivity,*/Context mContext, ArrayList<RepositoryResponse.Result> mList) {
         this.mContext = mContext;
         this.mList = mList;
+//        this.mAdapterCommunictionWithActivity= adapterCommunictionWithActivity;
     }
 
     @NonNull
@@ -41,25 +49,37 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
 
     @Override
     public void onBindViewHolder(@NonNull RepoDataViewHolder holder, int position) {
-        holder.itemBinding.repoAuther.setText(mList.get(position).getAuthor());
-        holder.itemBinding.repoName.setText(mList.get(position).getName());
-        holder.itemBinding.langs.setText(mList.get(position).getLanguage());
-        holder.itemBinding.forks.setText((mList.get(position).getForks())+"");
-        holder.itemBinding.stars.setText(mList.get(position).getStars()+"");
-        holder.itemBinding.discription.setText(mList.get(position).getDescription()+"  "+mList.get(position).getUrl());
-
-        holder.itemBinding.mainRelativeLayout.setOnClickListener(new View.OnClickListener() {
+        final RepositoryResponse.Result item = mList.get(position);
+        holder.itemBinding.repoAuther.setText(mList.get(position).getTitle());
+        holder.itemBinding.repoName.setText(mList.get(position).getPublishedDate());
+//        holder.itemBinding.langs.setText(mList.get(position).getPublishedDate());
+//        holder.itemBinding.forks.setText((mList.get(position).getPublishedDate())+"");
+//        holder.itemBinding.stars.setText(mList.get(position).getByline()+"");
+        holder.itemBinding.discription.setText(mList.get(position).getByline());
+        holder.itemBinding.maincardLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d("RepoAdapter", "onClick: ");
-                mList.get(position).setExpanded(!mList.get(position).isExpanded());
-                notifyItemChanged(position);
+                fragmentJump(item,position);
+//                mAdapterCommunictionWithActivity.openHomeFragment();
+//                mList.get(position).setExpanded(!mList.get(position).isExpanded());
+//                notifyItemChanged(position);
+//                MainActivity myActivity = (MainActivity) (((ContextWrapper) mContext).getBaseContext());
+//                myActivity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Favorites())
+//                        .commit();
+//                AppCompatActivity activity = (AppCompatActivity) new MainActivity();
+//                Fragment myFragment = new Favorites();
+//                activity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout    , myFragment).addToBackStack(null).commit();
+
             }
         });
-        boolean isExpanded= mList.get(position).isExpanded();
-        holder.itemBinding.expandableLayout.setVisibility(isExpanded? View.VISIBLE : View.GONE);
+//        boolean isExpanded= mList.get(position).isExpanded();
+//        holder.itemBinding.expandableLayout.setVisibility(isExpanded? View.VISIBLE : View.GONE);
 
-        Glide.with(mContext).load(mList.get(position).getAvatar())
+        Glide.with(mContext).applyDefaultRequestOptions(new RequestOptions()
+                .placeholder(R.drawable.ic_launcher_background)
+                .error(R.drawable.ic_launcher_background))
+                .load(mList.get(position).getMedia().get(0).getMediaMetadata().get(0).getUrl())
                 .into(holder.itemBinding.repoImage);
     }
 
@@ -77,12 +97,32 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
         }
     }
 
-    public  void updateList(ArrayList<RepositoryResponse> updatedList){
+    public  void updateList(ArrayList<RepositoryResponse.Result> updatedList){
         mList = updatedList;
         notifyDataSetChanged();
     }
 
-    public RepositoryResponse getRepoAt(int position){
+    public RepositoryResponse.Result getRepoAt(int position){
         return mList.get(position);
+    }
+
+    private void fragmentJump(RepositoryResponse.Result mItemSelected,int  pos) {
+        DetailsFragment mFragment =new DetailsFragment();
+//        mFragment = new Fragment2();
+
+        Bundle mBundle = new Bundle();
+        mBundle.putInt("item_selected_key", pos );
+        mFragment.setArguments(mBundle);
+        switchContent(R.id.frameLayout, mFragment);
+    }
+    public void switchContent(int id, Fragment fragment) {
+        if (mContext == null)
+            return;
+        if (mContext instanceof MainActivity) {
+            MainActivity mainActivity = (MainActivity) mContext;
+            Fragment frag = fragment;
+            mainActivity.switchContent(id, frag);
+        }
+
     }
 }
