@@ -29,7 +29,7 @@ To test this API, you can use all-sections for the section path component in the
 http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all- sections/7.json?apikey=sample-key
 ## Git Repositories:
 
-<img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/home.png"></img></br></br>  
+<img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/home.png" width="20%"></img></br></br>  
 <img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/connection%20lost.png" width="20%"></img></br></br>                       
                      
 
