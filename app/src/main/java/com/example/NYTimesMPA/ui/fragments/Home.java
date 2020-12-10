@@ -135,7 +135,7 @@ public class Home extends Fragment /*implements AdapterCommunictionWithActivity*
 
     private void initRecyclerView() {
         binding.repoRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new RepoDataAdapter(/*this,*/ getActivity().getApplicationContext(), (ArrayList<RepositoryResponse.Result>) repoDataList);
+        adapter = new RepoDataAdapter(/*this,*/ (MainActivity)getActivity(), (ArrayList<RepositoryResponse.Result>) repoDataList);
         binding.repoRecyclerView.setAdapter(adapter);
     }
     private boolean isNetworkConnected() {

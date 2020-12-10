@@ -61,6 +61,7 @@ public class DetailsFragment extends Fragment /*implements AdapterCommunictionWi
     }
 
     private void observeData() {
+
         viewModel.getFavoriteRepoList().observe(getViewLifecycleOwner(), new Observer<List<RepositoryResponse>>() {
             @Override
             public void onChanged(List<RepositoryResponse> repoData) {
@@ -70,7 +71,7 @@ public class DetailsFragment extends Fragment /*implements AdapterCommunictionWi
                 else{
                     ArrayList<RepositoryResponse.Result> list = new ArrayList<>();
                     list.addAll(repoData.get(0).getResults());
-                    adapter.updateList(list);
+//                    adapter.updateList(list);
                 }
             }
         });
@@ -99,7 +100,7 @@ public class DetailsFragment extends Fragment /*implements AdapterCommunictionWi
 
     private void initRecyclerView() {
         binding.favoritesRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new RepoDataAdapter(/*this,*/ getActivity().getApplicationContext(), repoDataList);
+        adapter = new RepoDataAdapter(/*this,*/ (MainActivity)getActivity(), repoDataList);
         binding.favoritesRecyclerView.setAdapter(adapter);
     }
    /* @Override

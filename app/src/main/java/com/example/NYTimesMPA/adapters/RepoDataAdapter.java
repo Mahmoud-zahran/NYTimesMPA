@@ -1,5 +1,6 @@
 package com.example.NYTimesMPA.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,20 +31,22 @@ import java.util.ArrayList;
  */
 public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDataViewHolder> {
     private Context mContext;
+    private Activity mActivity;
     private ArrayList<RepositoryResponse.Result> mList;
 //    AdapterCommunictionWithActivity mAdapterCommunictionWithActivity= null ;
     private ListItemBinding binding;
 
-    public RepoDataAdapter(/*AdapterCommunictionWithActivity adapterCommunictionWithActivity,*/Context mContext, ArrayList<RepositoryResponse.Result> mList) {
+    public RepoDataAdapter(/*AdapterCommunictionWithActivity adapterCommunictionWithActivity,*/MainActivity mainActivity, ArrayList<RepositoryResponse.Result> mList) {
         this.mContext = mContext;
         this.mList = mList;
+        this.mActivity= mainActivity;
 //        this.mAdapterCommunictionWithActivity= adapterCommunictionWithActivity;
     }
 
     @NonNull
     @Override
     public RepoDataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(mContext);
+        LayoutInflater inflater = LayoutInflater.from(mActivity);
         binding = ListItemBinding.inflate(inflater,parent,false);
         return new RepoDataViewHolder(binding);
     }
@@ -61,7 +64,7 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
             @Override
             public void onClick(View view) {
                 Log.d("RepoAdapter", "onClick: ");
-                Toast.makeText(mContext, "item clicked #"+position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(mActivity, "item clicked #"+position, Toast.LENGTH_SHORT).show();
                 fragmentJump(item,position);
 //                mAdapterCommunictionWithActivity.openHomeFragment();
 //                mList.get(position).setExpanded(!mList.get(position).isExpanded());
@@ -78,7 +81,7 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
 //        boolean isExpanded= mList.get(position).isExpanded();
 //        holder.itemBinding.expandableLayout.setVisibility(isExpanded? View.VISIBLE : View.GONE);
 
-        Glide.with(mContext).applyDefaultRequestOptions(new RequestOptions()
+        Glide.with(mActivity).applyDefaultRequestOptions(new RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_background))
                 .load(mList.get(position).getMedia().get(0).getMediaMetadata().get(0).getUrl())
@@ -118,10 +121,10 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
         switchContent(R.id.frameLayout, mFragment);
     }
     public void switchContent(int id, Fragment fragment) {
-        if (mContext == null)
+        if (mActivity == null)
             return;
-        if (mContext instanceof MainActivity) {
-            MainActivity mainActivity = (MainActivity) mContext;
+        if (mActivity instanceof MainActivity) {
+            MainActivity mainActivity = (MainActivity) mActivity;
             Fragment frag = fragment;
             mainActivity.switchContent(id, frag);
         }
