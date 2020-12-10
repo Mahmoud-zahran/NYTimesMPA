@@ -29,10 +29,9 @@ To test this API, you can use all-sections for the section path component in the
 http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all- sections/7.json?apikey=sample-key
 ## Git Repositories:
 
-<img src=""></img></br></br>  
-<img src="https://github.com/Mahmoud-zahran/UnionCoop/blob/main/Screen%20Shot%202020-10-04%20at%203.42.40%20AM.png" width="20%"></img></br></br>                       
-<img src="https://github.com/Mahmoud-zahran/UnionCoop/blob/main/Screen%20Shot%202020-10-04%20at%203.42.51%20AM.png" width="20%"></img></br></br>  
-<img src="https://github.com/Mahmoud-zahran/UnionCoop/blob/main/Screen%20Shot%202020-10-04%20at%203.43.28%20AM.png" width="20%"></img></br></br>                       
+<img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/home.png"></img></br></br>  
+<img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/connection%20lost.png" width="20%"></img></br></br>                       
+                     
 
 ## Libraries Used:
 - [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
