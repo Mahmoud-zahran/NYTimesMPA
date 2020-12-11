@@ -28,12 +28,13 @@ public class RepoDataViewModel extends ViewModel {
 //    private MutableLiveData<ArrayList<RepositoryResponse.Result>> mRepoList = new MutableLiveData<ArrayList<RepositoryResponse.Result>>();
     private MutableLiveData<ArrayList<RepositoryResponse.Result>> mRepoList = new MutableLiveData<>();
 
-    private LiveData<List<RepositoryResponse>> favoriteRepoList = null;
+    private MutableLiveData<ArrayList<RepositoryResponse.Result>> favoriteRepoList = null;
+    private LiveData<List<RepositoryResponse.Result>> mResultList = null;
 
     @ViewModelInject
     public RepoDataViewModel(Repository repository) {
         this.repository = repository;
-        favoriteRepoList = repository.getFavoriteRepo();
+//        favoriteRepoList = repository.getFavoriteRepo();
     }
 
     public MutableLiveData<ArrayList<RepositoryResponse.Result>> getmRepoList() {
@@ -47,13 +48,7 @@ public class RepoDataViewModel extends ViewModel {
                     @Override
                     public ArrayList<RepositoryResponse.Result> apply(RepositoryResponse repositoryResponse) throws Throwable {
                         List<RepositoryResponse.Result> list = repositoryResponse.getResults();
-                        for(RepositoryResponse.Result result : list){
-
-//                            String url = result.getUrl();
-//                            String[] pokemonIndex = url.split("/");
-//                            result.setUrl("https://pokeres.bastionbot.org/images/pokemon/"+pokemonIndex[pokemonIndex.length-1] +".png");
-                        }
-                        Log.e(TAG, "apply: "+list.get(2).getTitle());
+//                        mResultList= (LiveData<List<RepositoryResponse.Result>>) list;
                         return (ArrayList<RepositoryResponse.Result>) list;
                     }
                 })
@@ -61,14 +56,7 @@ public class RepoDataViewModel extends ViewModel {
                 .subscribe(result -> mRepoList.setValue( result),
                         error-> Log.e(TAG, "getRepos: " + error.getMessage() ));
     }
-//      .map(new Function<List<RepositoryResponse>, ArrayList<RepositoryResponse>>() {
-//                    @Override
-//                    public ArrayList<RepositoryResponse> apply(List<RepositoryResponse> repositoryResponses) throws Throwable {
-//
-//                        ArrayList<RepositoryResponse> list = (ArrayList<RepositoryResponse>) repositoryResponses;
-//                        return list;
-//                    }
-//                })
+
     public void insertRepo(RepositoryResponse repositoryResponse){
         repository.insertRepo(repositoryResponse);
     }
@@ -76,13 +64,16 @@ public class RepoDataViewModel extends ViewModel {
         repository.deleteRepo(repoName);
     }
 
-    public LiveData<List<RepositoryResponse>> getFavoriteRepoList() {
+    public MutableLiveData<ArrayList<RepositoryResponse.Result>> getFavoriteRepoList() {
+        favoriteRepoList= mRepoList;
         return favoriteRepoList;
     }
-
-    public void getFavoriteRepo(){
-       favoriteRepoList = repository.getFavoriteRepo();
+    public LiveData<List<RepositoryResponse.Result>> getResultList() {
+        return mResultList;
     }
+//    public void getFavoriteRepo(){
+//       favoriteRepoList = repository.getFavoriteRepo();
+//    }
 
 
 

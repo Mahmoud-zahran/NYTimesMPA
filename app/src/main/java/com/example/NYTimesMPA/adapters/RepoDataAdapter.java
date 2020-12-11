@@ -3,6 +3,7 @@ package com.example.NYTimesMPA.adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ import com.example.NYTimesMPA.ui.MainActivity;
 import com.example.NYTimesMPA.ui.fragments.DetailsFragment;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -64,18 +66,9 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
             @Override
             public void onClick(View view) {
                 Log.d("RepoAdapter", "onClick: ");
-                Toast.makeText(mActivity, "item clicked #"+position, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(mActivity, "item clicked #"+position, Toast.LENGTH_SHORT).show();
                 fragmentJump(item,position);
-//                mAdapterCommunictionWithActivity.openHomeFragment();
-//                mList.get(position).setExpanded(!mList.get(position).isExpanded());
-//                notifyItemChanged(position);
-//                MainActivity myActivity = (MainActivity) (((ContextWrapper) mContext).getBaseContext());
-//                myActivity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Favorites())
-//                        .commit();
-//                AppCompatActivity activity = (AppCompatActivity) new MainActivity();
-//                Fragment myFragment = new Favorites();
-//                activity.getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout  , myFragment).addToBackStack(null).commit();
-
+//
             }
         });
 //        boolean isExpanded= mList.get(position).isExpanded();
@@ -116,7 +109,7 @@ public class RepoDataAdapter extends RecyclerView.Adapter<RepoDataAdapter.RepoDa
 //        mFragment = new Fragment2();
 
         Bundle mBundle = new Bundle();
-        mBundle.putInt("item_selected_key", pos );
+        mBundle.putSerializable("item_selected_key", (Serializable) mItemSelected);
         mFragment.setArguments(mBundle);
         switchContent(R.id.frameLayout, mFragment);
     }

@@ -49,28 +49,28 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.main_menu, menu);
+//        return true;
+//    }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.openFav){
-            isFavoriteListVisible = false;
-
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new DetailsFragment())
-                            .commit();
-        }
-        if (item.getItemId() == R.id.openHome){
-            isFavoriteListVisible = false;
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Home())
-                    .commit();
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        /*if (item.getItemId() == R.id.openFav){
+//            isFavoriteListVisible = false;
+//
+//            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new DetailsFragment())
+//                            .commit();
+//        }*/
+//        if (item.getItemId() == R.id.openHome){
+//            isFavoriteListVisible = false;
+//            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new Home())
+//                    .commit();
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
     private boolean isNetworkConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
