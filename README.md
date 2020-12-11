@@ -26,7 +26,9 @@ You need to fetch the data from [Most viewed Articles](http://api.nytimes.com/sv
 To test this API, you can use all-sections for the section path component in the URL above and 7 for period 
 (available period values are 1, 7 and 30, which represents how far back, in days, the API returns results for).
 
-http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all- sections/7.json?apikey=sample-key
+## Ui Testing Using Espresso
+you can run Ui testing by just run MainActivityTest.class and check what happend in emulator
+
 ## Git Repositories:
 
 <img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/home.png" width="20%"></img></br></br>  
