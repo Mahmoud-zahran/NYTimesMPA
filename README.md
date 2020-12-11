@@ -31,6 +31,7 @@ http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all- sections/7.json?apikey
 
 <img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/home.png" width="20%"></img></br></br>  
 <img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/connection%20lost.png" width="20%"></img></br></br>                       
+<img src="https://github.com/Mahmoud-zahran/NYTimesMPA/blob/main/connection%20lost.png" width="20%"></img></br></br>                       
                      
 
 ## Libraries Used:
